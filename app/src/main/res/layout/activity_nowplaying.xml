@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/playing_album"
+            style="@style/NowPlayingAlbum"
+            tools:text="album name" />
+
+        <ImageView
+            android:id="@+id/playing_albumicon"
+            style="@style/NowPlayingImage" />
+
+        <ImageView
+            android:id="@+id/play_button"
+            style="@style/PlayButton"
+            android:src="@drawable/play50" />
+
+        <ImageView
+            android:id="@+id/fast_forward_button"
+            style="@style/FastForwardButton"
+            android:src="@drawable/fastforward50" />
+
+        <ImageView
+            android:id="@+id/rewind_button"
+            style="@style/RewindButton"
+            android:src="@drawable/rewind50" />
+
+        <TextView
+            android:id="@+id/playing_song"
+            style="@style/NowPlayingSong"
+            tools:text="song title" />
+
+        <TextView
+            android:id="@+id/playing_artist"
+            style="@style/NowPlayingArtist"
+            tools:text="artist name" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/SeekBar" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
